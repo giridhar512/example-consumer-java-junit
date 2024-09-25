@@ -20,7 +20,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 @ExtendWith(PactConsumerTestExt.class)
-@PactTestFor(providerName = "pactflow-example-provider-springboot")
+@PactTestFor(providerName = "pactflow-example-provider-springboot", pactVersion = PactSpecVersion.V3)
 public class ProductsPactTest {
 
   @Pact(consumer="pactflow-example-consumer-java-junit")
