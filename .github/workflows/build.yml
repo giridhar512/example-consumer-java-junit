@@ -33,7 +33,7 @@ jobs:
         with:
           distribution: 'zulu' 
           java-version: '11'
-      - name: Test for ${{ matrix.pact_provider }}
+      - name: Running Tests to generate Pacts
         run: make test
         env:
           PACT_PROVIDER: ${{ matrix.pact_provider }}
